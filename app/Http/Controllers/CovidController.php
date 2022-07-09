@@ -15,4 +15,10 @@ class CovidController extends Controller
             ->with('responses', $responses)
             ->with('last_update', $last_update);
     }
+
+    public function detail_prov($id)
+    {
+        $response = Http::get("https://data.covid19.go.id/public/api/prov.json")['list_data'][$id];
+        return view('detail_prov')->with('response', $response);
+    }
 }
