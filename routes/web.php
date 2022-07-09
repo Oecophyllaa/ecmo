@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CovidController;
 use Illuminate\Support\Facades\Route;
 
 /*
