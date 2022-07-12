@@ -5,17 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Detail Covid Provinsi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    {{-- Bootstrap --}}
+    <link rel="stylesheet" href="{{ url('bootstrap-5.2.0/css/bootstrap.min.css') }}">
+    {{-- Leaflet --}}
+    <link rel="stylesheet" href="{{ url('leaflet/leaflet.css') }}">
+    <script src="{{ url('leaflet/leaflet.js') }}"></script>
 </head>
 
 <body>
-    {{-- @dd($response) --}}
     <div class="container">
         <div class="row mt-3">
+            <div class="col-md-12 justify-content-end">
+                <a href="/covid" class="btn btn-dark float-end">Back</a>
+            </div>
+        </div>
+        <div class="row mt-2">
             <div class="col-md-12">
                 <div class="card mb-3">
-                    <img src="..." class="card-img-top" alt="dki_jakarta">
+                    <div id="map" style="height: 50vh"></div>
                     <div class="card-body text-center">
                         <h4 class="card-title">{{ $response['key'] }}</h4>
                         <div class="row mt-3">
@@ -59,8 +67,15 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    <script src="{{ url('bootstrap-5.2.0/js/bootstrap.bundle.min.js') }}"></script>
+    <script>
+        const lon = {!! json_encode($response['lokasi']['lon']) !!}
+        const lat = {!! json_encode($response['lokasi']['lat']) !!}
+        const map = L.map('map').setView([lat, lon], 10);
+        L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
+            maxZoom: 20,
+            subdomains:['mt0','mt1','mt2','mt3']
+        }).addTo(map);
     </script>
 </body>
 
