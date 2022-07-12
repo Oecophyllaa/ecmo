@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/covid', [CovidController::class, 'prov']);
+Route::get('/covid/{id}', [CovidController::class, 'detail_prov']);

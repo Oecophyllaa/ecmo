@@ -11,8 +11,14 @@ class CovidController extends Controller
     {
         $last_update = Http::get("https://data.covid19.go.id/public/api/prov.json");
         $responses = Http::get("https://data.covid19.go.id/public/api/prov.json")['list_data'];
-        return view('covid')
+        return view('covid_prov.index')
             ->with('responses', $responses)
             ->with('last_update', $last_update);
+    }
+
+    public function detail_prov($id)
+    {
+        $response = Http::get("https://data.covid19.go.id/public/api/prov.json")['list_data'][$id];
+        return view('covid_prov.detail')->with('response', $response);
     }
 }
