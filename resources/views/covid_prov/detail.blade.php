@@ -11,6 +11,8 @@
     {{-- Leaflet --}}
     <link rel="stylesheet" href="{{ url('leaflet/leaflet.css') }}">
     <script src="{{ url('leaflet/leaflet.js') }}"></script>
+    {{-- ChartJs --}}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 </head>
 
 <body>
