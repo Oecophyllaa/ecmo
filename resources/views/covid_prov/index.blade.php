@@ -37,7 +37,7 @@
                             <a href="/covid/{{ $loop->index }}" class="btn btn-primary">Go somewhere</a>
                         </div>
                         <div class="card-footer text-muted">
-                            <p>Last Update</p>
+                            <p class="mb-0">Last Update</p>
                             {{ $last_update['last_date'] }}
                         </div>
                     </div>

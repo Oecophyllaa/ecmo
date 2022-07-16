@@ -34,33 +34,64 @@
                                 <p>{{ $response['jumlah_kasus'] }}</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row justify-content-center">
+                            <div class="col-md-2">
                                 <h6 class="text-danger">Meninggal</h6>
                                 <p>{{ $response['jumlah_meninggal'] }}</p>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <h6 class="text-warning">Dirawat</h6>
                                 <p>{{ $response['jumlah_dirawat'] }}</p>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <h6 class="text-success">Sembuh</h6>
                                 <p>{{ $response['jumlah_sembuh'] }}</p>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-12">
-                                <h5>Jenis Kelamin</h5>
+                                <h5 class="mb-4">Jenis Kelamin</h5>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row justify-content-center">
+                            <div class="col-md-2">
                                 <h6>Laki - Laki</h6>
                                 <p>{{ $response['jenis_kelamin'][0]['doc_count'] }}</p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-2">
                                 <h6>Perempuan</h6>
                                 <p>{{ $response['jenis_kelamin'][1]['doc_count'] }}</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h5 class="mb-4">Kelompok Umur</h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-2">
+                                <h6>{{ $response['kelompok_umur'][0]['key'] }}</h6>
+                                <p>{{ $response['kelompok_umur'][0]['doc_count'] }}</p>
+                            </div>
+                            <div class="col-2">
+                                <h6>{{ $response['kelompok_umur'][1]['key'] }}</h6>
+                                <p>{{ $response['kelompok_umur'][1]['doc_count'] }}</p>
+                            </div>
+                            <div class="col-2">
+                                <h6>{{ $response['kelompok_umur'][2]['key'] }}</h6>
+                                <p>{{ $response['kelompok_umur'][2]['doc_count'] }}</p>
+                            </div>
+                            <div class="col-2">
+                                <h6>{{ $response['kelompok_umur'][3]['key'] }}</h6>
+                                <p>{{ $response['kelompok_umur'][3]['doc_count'] }}</p>
+                            </div>
+                            <div class="col-2">
+                                <h6>{{ $response['kelompok_umur'][4]['key'] }}</h6>
+                                <p>{{ $response['kelompok_umur'][4]['doc_count'] }}</p>
+                            </div>
+                            <div class="col-2">
+                                <h6>{{ $response['kelompok_umur'][5]['key'] }}</h6>
+                                <p>{{ $response['kelompok_umur'][5]['doc_count'] }}</p>
                             </div>
                         </div>
                         {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
