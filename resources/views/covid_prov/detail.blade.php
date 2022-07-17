@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    {{-- @dd($graph) --}}
     <div class="container">
         <div class="row mt-3">
             <div class="col-md-12 justify-content-end">
@@ -94,7 +95,12 @@
                                 <p>{{ $response['kelompok_umur'][5]['doc_count'] }}</p>
                             </div>
                         </div>
-                        {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h5>Trend Grafik Covid</h5>
+                                <canvas id="myChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,10 +111,62 @@
         const lon = {!! json_encode($response['lokasi']['lon']) !!}
         const lat = {!! json_encode($response['lokasi']['lat']) !!}
         const map = L.map('map').setView([lat, lon], 10);
-        L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
+        L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
             maxZoom: 20,
-            subdomains:['mt0','mt1','mt2','mt3']
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         }).addTo(map);
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const getId = {!! json_encode($id) !!}
+        const xlabels = [
+            {!! json_encode($graph[856]['date']) !!},
+            {!! json_encode($graph[857]['date']) !!},
+            {!! json_encode($graph[858]['date']) !!},
+            {!! json_encode($graph[859]['date']) !!},
+            {!! json_encode($graph[860]['date']) !!},
+            {!! json_encode($graph[861]['date']) !!},
+            {!! json_encode($graph[862]['date']) !!},
+            {!! json_encode($graph[863]['date']) !!},
+            {!! json_encode($graph[864]['date']) !!},
+            {!! json_encode($graph[865]['date']) !!},
+        ];
+        const xdata = [
+            {!! json_encode($graph[856]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[857]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[858]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[859]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[860]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[861]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[862]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[863]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[864]['data'][$id]['cur_doc_count']) !!},
+            {!! json_encode($graph[865]['data'][$id]['cur_doc_count']) !!},
+        ];
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: xlabels,
+                datasets: [{
+                    label: 'Update 10 Hari Terakhir',
+                    data: xdata,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
     </script>
 </body>
 

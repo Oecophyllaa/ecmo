@@ -18,7 +18,11 @@ class CovidController extends Controller
 
     public function detail_prov($id)
     {
+        $graph = Http::get("https://data.covid19.go.id/public/api/prov_time.json")['list'];
         $response = Http::get("https://data.covid19.go.id/public/api/prov.json")['list_data'][$id];
-        return view('covid_prov.detail')->with('response', $response);
+        return view('covid_prov.detail')
+            ->with('id', $id)
+            ->with('graph', $graph)
+            ->with('response', $response);
     }
 }
