@@ -6,6 +6,7 @@
             <ul>
                 <li><a href="/smart-cam">Smart Camera Detection</a></li>
                 <li><a href="/smart-map">Smart Map Monitoring</a></li>
+                <li><a href="/covid">Data Covid Provinsi</a></li>
             </ul>
         </li>
         <li><a href="/news">Berita</a></li>
