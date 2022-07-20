@@ -35,4 +35,10 @@ class HomeController extends Controller
         $title = "Technology";
         return view('home.smartcam', compact('title'));
     }
+
+    public function smartmap()
+    {
+        $title = "Technology";
+        return view('home.smartmap', compact('title'));
+    }
 }

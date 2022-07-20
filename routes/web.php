@@ -23,3 +23,5 @@ Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/news', [HomeController::class, 'news']);
 Route::get('/smart-cam', [HomeController::class, 'smartcam']);
+Route::get('/smart-map', [HomeController::class, 'smartmap']);
+
