@@ -34,7 +34,7 @@
                                     <p>{{ $response['jumlah_sembuh'] }}</p>
                                 </div>
                             </div>
-                            <a href="/covid/{{ $loop->index }}" class="btn btn-primary">Go somewhere</a>
+                            <a href="/covid/{{ $loop->index }}" class="btn btn-primary">Detail</a>
                         </div>
                         <div class="card-footer text-muted">
                             <p class="mb-0">Last Update</p>
