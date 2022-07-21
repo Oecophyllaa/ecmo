@@ -19,8 +19,8 @@
     {{-- @dd($graph) --}}
     <div class="container">
         <div class="row mt-3">
-            <div class="col-md-12 justify-content-end">
-                <a href="/covid" class="btn btn-dark float-end">Back</a>
+            <div class="col-md-12">
+                <a href="/covid" class="btn btn-dark d-block">Back to Data Covid Provinsi</a>
             </div>
         </div>
         <div class="row mt-2">

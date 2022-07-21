@@ -11,6 +11,11 @@
 <body>
     <div class="container">
         <div class="row mt-3">
+            <div class="col-12">
+                <a class="btn btn-primary d-block" href="/" role="button">Back to Home</a>
+            </div>
+        </div>
+        <div class="row">
             @foreach ($responses as $response)
             <div class="col-md-6 my-3">
                     <div class="card text-center">
