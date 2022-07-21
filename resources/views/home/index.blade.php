@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ECMO - {{ $title }}</title>
+    <title>ECMO - Beranda</title>
     <meta name="description" content="ECMO" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -60,8 +60,11 @@
                     <div class="inner-container clearfix">
 
                         <div class="pull-left logo-box">
-                            <div class="logo"><a href="/"><img src="assets/images/ecmo-logo.png" alt=""
-                                        title=""></a></div>
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="assets/images/ecmo-logo.png" alt="" title="">
+                                </a>
+                            </div>
                         </div>
 
                         <div class="nav-outer pull-left clearfix">
@@ -103,7 +106,7 @@
                 <div class="close-btn"><span class="icon lnr lnr-cross"></span></div>
 
                 <nav class="menu-box">
-                    <div class="nav-logo"><a href="/"><img src="assets/images/dark-header.png" alt=""
+                    <div class="nav-logo"><a href="Beranda"><img src="assets/images/dark-header.png" alt=""
                                 title=""></a></div>
                     <div class="menu-outer">
                     </div>
@@ -129,7 +132,7 @@
                                     <br>guna membangun Indonesia maju
                                 </p>
                                 <div class="btn-box">
-                                    <a href="/about" class="see-projects">Kenali Kita Lebih Dekat</a>
+                                    <a href="Tentang" class="see-projects">Kenali Kita Lebih Dekat</a>
                                 </div>
                             </div>
                         </div>
@@ -154,8 +157,8 @@
             <!-- Social Box -->
             <ul class="social-box">
                 <li><a href="https://twitter.com/humaspolije" class="ion-social-twitter"></a></li>
+                <li><a href="https://www.youtube.com/c/POLIJESIP" class="ion-social-youtube"></a></li>
                 <li><a href="https://www.facebook.com/politekniknegerijember" class="ion-social-facebook"></a></li>
-                <li><a href="#" class="fab fa-behance"></a></li>
             </ul>
 
             <!-- Info -->
@@ -307,36 +310,32 @@
                         <!--Sponsors Slider-->
                         <ul class="sponsors-carousel owl-carousel owl-theme">
                             <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/1.png" alt=""></a>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/tk.png" alt=""></a>
                                 </div>
                             </li>
                             <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/2.png" alt=""></a>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/leaflet.png"
+                                            alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/esri.png" alt=""></a>
                                 </div>
                             </li>
                             <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/3.png" alt=""></a>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/kopi88.png"
+                                            alt=""></a></div>
+                            </li>
+                            <li>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/ch.png" alt=""></a>
                                 </div>
                             </li>
                             <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/4.png" alt=""></a>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/ai.png" alt=""></a>
                                 </div>
                             </li>
                             <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/5.png" alt=""></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/1.png" alt=""></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/2.png" alt=""></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="image-box"><a href="#"><img src="assets/images/clients/3.png" alt=""></a>
-                                </div>
+                                <div class="image-box"><a href="#"><img src="assets/images/clients/apparel.png"
+                                            alt=""></a></div>
                             </li>
                         </ul>
                     </div>
@@ -354,7 +353,7 @@
                         <div class="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="blog-detail.html"><img src="assets/images/resource/berita-1.jpg"
+                                    <a href="Detail-berita1"><img src="assets/images/resource/berita-1.jpg"
                                             alt="" /></a>
                                 </div>
                                 <div class="lower-content">
@@ -362,7 +361,7 @@
                                         <li>09 Juli ,2022</li>
                                         <li>Berita Terkini</li>
                                     </ul>
-                                    <h4><a href="blog-detail.html">Satgas Covid-19 Keluarkan Syarat Terbaru Pelaku
+                                    <h4><a href="Detail-berita1">Satgas Covid-19 Keluarkan Syarat Terbaru Pelaku
                                             Perjalanan Dalam Negeri</a></h4>
                                 </div>
                             </div>
@@ -372,7 +371,7 @@
                         <div class="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="blog-detail.html"><img src="assets/images/resource/berita-2.jpg"
+                                    <a href="Detail-berita2"><img src="assets/images/resource/berita-2.jpg"
                                             alt="" /></a>
                                 </div>
                                 <div class="lower-content">
@@ -380,7 +379,7 @@
                                         <li>08 Maret ,2022</li>
                                         <li>Berita</li>
                                     </ul>
-                                    <h4><a href="blog-detail.html">3 Kabar Baik Corona di Indonesia Bikin Ragam Aturan
+                                    <h4><a href="Detail-berita2">3 Kabar Baik Corona di Indonesia Bikin Ragam Aturan
                                             Lebih Longgar</a></h4>
                                 </div>
                             </div>
@@ -390,15 +389,15 @@
                         <div class="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="blog-detail.html"><img src="assets/images/resource/berita-3.jpg"
+                                    <a href="Detail-berita3"><img src="assets/images/resource/berita-3.jpg"
                                             alt="" /></a>
                                 </div>
                                 <div class="lower-content">
                                     <ul class="info-list">
-                                        <li>07 JULI ,2022</li>
-                                        <li>BERITA Terkini</li>
+                                        <li>07 Juli ,2022</li>
+                                        <li>Berita Terkini</li>
                                     </ul>
-                                    <h4><a href="blog-detail.html">Dalam Sehari Level PPKM Jabodetabek Berubah, Ini
+                                    <h4><a href="Detail-berita3">Dalam Sehari Level PPKM Jabodetabek Berubah, Ini
                                             Penjelasan Satgas Covid-19</a></h4>
                                 </div>
                             </div>
@@ -408,15 +407,15 @@
                         <div class="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="blog-detail.html"><img src="assets/images/resource/berita-4.jpg"
+                                    <a href="Detail-berita4"><img src="assets/images/resource/berita-4.jpg"
                                             alt="" /></a>
                                 </div>
                                 <div class="lower-content">
                                     <ul class="info-list">
-                                        <li>30 MEI ,2022</li>
-                                        <li>BERITA</li>
+                                        <li>30 Mei ,2022</li>
+                                        <li>Berita</li>
                                     </ul>
-                                    <h4><a href="blog-detail.html">Jokowi: Pandemi Covid-19 Sudah Melandai, Aktivitas
+                                    <h4><a href="Detail-berita4">Jokowi: Pandemi Covid-19 Sudah Melandai, Aktivitas
                                             Masyarakat Mulai Normal</a></h4>
                                 </div>
                             </div>
@@ -431,24 +430,22 @@
             <footer class="main-footer">
                 <div class="auto-container">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo-footer.png" alt="" /></a>
+                        <a href="Beranda"><img src="assets/images/logo-footer.png" alt="" /></a>
                     </div>
                     <ul class="footer-page-nav">
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Tentang</a></li>
-                        <li><a href="#">Berita</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="Beranda">Beranda</a></li>
+                        <li><a href="Tentang">Tentang</a></li>
+                        <li><a href="Berita">Berita</a></li>
+                        <li><a href="Contact">Contact</a></li>
                     </ul>
                     <div class="contact-info">Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari <br>Kabupaten
                         Jember, Jawa Timur 68121<br> <a href="tel:+62-895-2341-8523">(+62) 331 333531</a> <br> <a
                             href="mailto:politeknik@polije.ac.id">politeknik@polije.ac.id</a></div>
                     <ul class="footer-social-icons">
-                        <li><a href="http://facebook.com/" class="icofont-facebook"></a></li>
-                        <li><a href="https://twitter.com/" class="icofont-twitter"></a></li>
-                        <li><a href="http://google.com/" class="icofont-google-plus"></a></li>
-                        <li><a href="http://linkedin.com/" class="icofont-linkedin"></a></li>
-                        <li><a href="http://rss.com/" class="icofont-rss"></a></li>
-                        <li><a href="http://dribbble.com/" class="icofont-dribbble"></a></li>
+                        <li><a href="https://www.facebook.com/politekniknegerijember" class="icofont-facebook"></a></li>
+                        <li><a href="https://twitter.com/humaspolije" class="icofont-twitter"></a></li>
+                        <li><a href="https://www.youtube.com/c/POLIJESIP" class="icofont-youtube-play"></a></li>
+                        <li><a href="https://www.instagram.com/humaspolije/" class="icofont-instagram"></a></li>
                     </ul>
                     <div class="copyright">Copyright ©
                         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
@@ -530,10 +527,21 @@
             apikey: apiKey
         });
 
+        var tersedia = L.icon({
+            iconUrl: 'assets/images/icon-map/tersedia.png',
+            iconSize: [32, 50], // size of the icon
+        });
+
+        var penuh = L.icon({
+            iconUrl: 'assets/images/icon-map/penuh.png',
+            iconSize: [32, 50], // size of the icon
+        });
+
 
         // Identity Marker Point Map GIS;
-        var rsPremiere = L.marker([-7.304479804811505, 112.76526029365439]).bindPopup(
-                "<b> Rumah Sakit Premier Surabaya</b><br>" +
+        var rsPremiere = L.marker([-7.304479804811505, 112.76526029365439], {
+                icon: tersedia
+            }).bindPopup("<b> Rumah Sakit Premier Surabaya</b><br>" +
                 "Jl. Sekolahan No.1, Kuthuk, Sidokare, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61214 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -541,8 +549,9 @@
                 "Kamar Kelas Tinggi (VIP) : tersedia <br>" +
                 "Kamar Umum (Kelas 1-3) : tersedia <br>" +
                 ""),
-            rkzSurabaya = L.marker([-7.291211402946695, 112.73618535429375]).bindPopup(
-                "<b> Rumah Sakit Katolik St. Vincentius a Paulo</b><br>" +
+            rkzSurabaya = L.marker([-7.291211402946695, 112.73618535429375], {
+                icon: tersedia
+            }).bindPopup("<b> Rumah Sakit Katolik St. Vincentius a Paulo</b><br>" +
                 "Jl. Diponegoro No.51, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -550,14 +559,17 @@
                 "Kamar Kelas Tinggi (VIP) : Penuh <br>" +
                 "Kamar Umum (Kelas 1-3) : tersedia <br>" +
                 ""),
-            puskessedati = L.marker([-7.393936249235849, 112.76340814172832]).bindPopup("<b> Puskesmas Sedati</b><br>" +
+            puskessedati = L.marker([-7.393936249235849, 112.76340814172832], {
+                icon: penuh
+            }).bindPopup("<b> Puskesmas Sedati</b><br>" +
                 "Jl. Senopati No.3-7, Kepuh, Betro, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur 61253 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
                 "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
                 ""),
-            rsDeltaSurya = L.marker([-7.447026719366628, 112.70158364139134]).bindPopup(
-                "<b> Rumah Sakit Delta Surya</b><br>" +
+            rsDeltaSurya = L.marker([-7.447026719366628, 112.70158364139134], {
+                icon: tersedia
+            }).bindPopup("<b> Rumah Sakit Delta Surya</b><br>" +
                 "Jl. Pahlawan No.9, Jati, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61211 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -566,7 +578,9 @@
                 "Kamar Umum (Kelas 1-3) : tersedia <br>" +
                 ""),
 
-            jktHospital = L.marker([-6.2182320457926865, 106.81617850403731]).bindPopup("<b> Jakarta Hospital</b><br>" +
+            jktHospital = L.marker([-6.2182320457926865, 106.81617850403731], {
+                icon: tersedia
+            }).bindPopup("<b> Jakarta Hospital</b><br>" +
                 "Jl. Jend. Sudirman No.Kav 49, RT.5/RW.4, Karet Semanggi, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -575,8 +589,9 @@
                 "Kamar Umum (Kelas 1-3) : tersedia <br>" +
                 ""),
 
-            rsSemarang = L.marker([-6.9942261120509315, 110.40742638243788]).bindPopup(
-                "<b> Rumah Sakit Umum Pusat Dr.Kariadi Semarang</b><br>" +
+            rsSemarang = L.marker([-6.9942261120509315, 110.40742638243788], {
+                icon: tersedia
+            }).bindPopup("<b> Rumah Sakit Umum Pusat Dr.Kariadi Semarang</b><br>" +
                 "Jl. DR. Sutomo No.16, Randusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50244 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -585,8 +600,9 @@
                 "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
                 ""),
 
-            rsPadang = L.marker([-0.9434987669276792, 100.36708159841716]).bindPopup(
-                "<b> Rumah Sakit Umum Pusat Dr. M. Djamil Padang</b><br>" +
+            rsPadang = L.marker([-0.9434987669276792, 100.36708159841716], {
+                icon: tersedia
+            }).bindPopup("<b> Rumah Sakit Umum Pusat Dr. M. Djamil Padang</b><br>" +
                 "Jl. Perintis Kemerdekaan, Sawahan Tim., Kec. Padang Tim., Kota Padang, Sumatera Barat 25171 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -595,8 +611,9 @@
                 "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
                 ""),
 
-            siloamblk = L.marker([-1.2522495369408835, 116.87032684055045]).bindPopup(
-                "<b>Siloam Hospitals Balikpapan</b><br>" +
+            siloamblk = L.marker([-1.2522495369408835, 116.87032684055045], {
+                icon: tersedia
+            }).bindPopup("<b>Siloam Hospitals Balikpapan</b><br>" +
                 "Jl. MT Haryono No.23, Damai, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -605,7 +622,9 @@
                 "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
                 ""),
 
-            rsponti = L.marker([-0.06156513716299948, 109.36461842701347]).bindPopup("<b>RSUD dr Soedarso</b><br>" +
+            rsponti = L.marker([-0.06156513716299948, 109.36461842701347], {
+                icon: tersedia
+            }).bindPopup("<b>RSUD dr Soedarso</b><br>" +
                 "Jl. DR. Soedarso No.1, Bangka Belitung Laut, Kec. Pontianak Tenggara, Kota Pontianak, Kalimantan Barat 78124<br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
@@ -614,35 +633,135 @@
                 "Kamar Umum (Kelas 1-3) : Kosong <br>" +
                 ""),
 
-            puskessedati = L.marker([-7.393936249235849, 112.76340814172832]).bindPopup("<b> Puskesmas Sedati</b><br>" +
+            puskessedati = L.marker([-7.393936249235849, 112.76340814172832], {
+                icon: penuh
+            }).bindPopup("<b> Puskesmas Sedati</b><br>" +
                 "Jl. Senopati No.3-7, Kepuh, Betro, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur 61253 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
                 "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
                 ""),
 
-            siloamMks = L.marker([-5.150113699844238, 119.4071597455174]).bindPopup(
-                "<b>Siloam Hospitals Makassar</b><br>" +
+            siloamMks = L.marker([-5.150113699844238, 119.4071597455174], {
+                icon: penuh
+            }).bindPopup("<b>Siloam Hospitals Makassar</b><br>" +
                 "Jl. Metro Tj. Bunga No.Kav. 9, Tj. Merdeka, Sulawesi Selatan 90112 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
                 "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
                 ""),
 
-            RSUKendari = L.marker([-3.9697061946251284, 122.52295765757948]).bindPopup(
-                "<b>Rumah Sakit Umum Permata Bunda Kendari</b><br>" +
+            RSUKendari = L.marker([-3.9697061946251284, 122.52295765757948], {
+                icon: penuh
+            }).bindPopup("<b>Rumah Sakit Umum Permata Bunda Kendari</b><br>" +
                 "Jl. Syech Yusuf No.9, Korumba, Kec. Mandonga, Kota Kendari, Sulawesi Tenggara 93111 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
                 "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
                 ""),
 
-            RSManado = L.marker([-3.9697061946251284, 122.52295765757948]).bindPopup(
-                "<b>Rumah Sakit Umum Permata Bunda Kendari</b><br>" +
+            RSManado = L.marker([-3.9697061946251284, 122.52295765757948], {
+                icon: penuh
+            }).bindPopup("<b>Rumah Sakit Umum Permata Bunda Kendari</b><br>" +
                 "Jl. Syech Yusuf No.9, Korumba, Kec. Mandonga, Kota Kendari, Sulawesi Tenggara 93111 <br>" +
                 "<br>" +
                 "Data Kamar : <br>" +
                 "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
+                ""),
+
+            rspalu = L.marker([-0.9073923822527507, 119.87357217095752], {
+                icon: penuh
+            }).bindPopup("<b>RS Budi Agung Palu</b><br>" +
+                "Jl. Maluku No.44, Lolu Sel., Kec. Palu Sel., Kota Palu, Sulawesi Tengah 94111 <br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
+                ""),
+
+            rsambon = L.marker([-3.6269874039370835, 128.24279233290198], {
+                icon: tersedia
+            }).bindPopup("<b>RS Budi Agung Palu</b><br>" +
+                "Jl. Laksdya Leo Wattimena, Negeri Lama, Kec. Baguala, Kota Ambon, Maluku <br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tidak Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
+                ""),
+
+            rsmanado = L.marker([-3.6269874039370835, 128.24279233290198], {
+                icon: tersedia
+            }).bindPopup("<b>Rumah Sakit Advent Manado</b><br>" +
+                "Jl. 14 Februari, Teling Atas, Kec. Wanea, Kota Manado, Sulawesi Utara<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
+                ""),
+
+            rsyowari = L.marker([-2.5250846327906378, 140.46349647626923], {
+                icon: tersedia
+            }).bindPopup("<b>Rumah Sakit Yowari</b><br>" +
+                "Doyo Baru, Distrik Waibu, Kabupaten Jayapura, Papua 99352<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tidak Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
+                ""),
+
+            rsalternate = L.marker([0.7884702986206458, 127.38718253152095], {
+                icon: tersedia
+            }).bindPopup("<b>RS. TNI-AD Ternate</b><br>" +
+                "Jl. A.I.S Nasution No.2, Gamalama, Kec. Ternate Tengah, Kota Ternate, Maluku Utara<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
+                ""),
+
+            rsmedan = L.marker([0.7884702986206458, 127.38718253152095], {
+                icon: tersedia
+            }).bindPopup("<b>Rumah Sakit Umum (RSU) Sarah Medan</b><br>" +
+                "Jl. Baja Raya No.10, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
+                ""),
+
+            rsaceh = L.marker([3.5861232128093175, 98.67266699504292], {
+                icon: penuh
+            }).bindPopup("<b>Rumah Sakit Islam Malayahati</b><br>" +
+                "Jl. Pangeran Diponegoro No.2 - 4, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20112<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "<b> Saat Ini Semua Kamar Penuh </b> <br>" +
+                ""),
+
+            rsbandaaceh = L.marker([5.539940738224492, 95.31004340449371], {
+                icon: tersedia
+            }).bindPopup("<b>RSU. Harapan Bunda</b><br>" +
+                "Jl. Teuku Umar No.181-211, Seutui, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23243<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
+                ""),
+
+            rspalembang = L.marker([-2.9480277248787976, 104.73446902355784], {
+                icon: tersedia
+            }).bindPopup("<b>RSUD Siti Fatimah Az-Zahra Provinsi Sumatera Selatan</b><br>" +
+                "Jl. Kol. H. Burlian, Suka Bangun, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30151<br>" +
+                "<br>" +
+                "Data Kamar : <br>" +
+                "Kamar Kelas Sangat Tinggi (Super VIP) : Tersedia <br>" +
+                "Kamar Kelas Tinggi (VIP) : Tersedia <br>" +
+                "Kamar Umum (Kelas 1-3) : Tersedia <br>" +
                 ""),
             golden = L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.');
 
@@ -653,7 +772,7 @@
 
         const map = L.map("map", {
             minZoom: 2
-        }).setView([-7.252120301899846, 112.75250918779057], 13);
+        }).setView([-0.753400, 113.954883], 4.6);
 
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -674,12 +793,28 @@
             }
         });
 
-        var cities = L.layerGroup([rsPremiere, rkzSurabaya, puskessedati, rsDeltaSurya, jktHospital, rsSemarang,
-            rsPadang, siloamblk, siloamMks
+        var semua = L.layerGroup([rsPremiere, rkzSurabaya, puskessedati, rsDeltaSurya, jktHospital, rsSemarang,
+            rsPadang, siloamblk, rsponti, siloamMks, RSUKendari, RSManado, rspalu, rsambon, rsmanado, rsyowari,
+            rsalternate, rsmedan, rsaceh, rsbandaaceh, rspalembang
         ]);
+        var sangat = L.layerGroup([rsPremiere, rkzSurabaya, jktHospital, rsSemarang, siloamblk, rsponti, rsmanado,
+            rsalternate, rsmedan, rsbandaaceh, rspalembang
+        ]);
+        var tinggi = L.layerGroup([rsPremiere, rsDeltaSurya, jktHospital, rsSemarang, rsPadang, siloamblk, rsponti,
+            rsambon, rsmanado, rsyowari, rsalternate, rsmedan, rsbandaaceh, rspalembang
+        ]);
+        var umum = L.layerGroup([rsPremiere, rkzSurabaya, rsDeltaSurya, jktHospital, rsSemarang, rsPadang, siloamblk,
+            rsambon, rsmanado, rsyowari, rsalternate, rsmedan, rsbandaaceh, rspalembang
+        ]);
+        var penuh = L.layerGroup([puskessedati, siloamMks, RSUKendari, RSManado, rspalu, rsaceh]);
+
 
         var overlayMaps = {
-            "Semua Faskes": cities
+            "Semua Faskes": semua,
+            "Sangat Tinggi": sangat,
+            "Tinggi": tinggi,
+            "Umum": umum,
+            "Penuh": penuh
         };
 
         const baseLayers = {
